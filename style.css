@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2vw 4vw;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  
+
+}
+
+
+#navbar h5{
+  font-size: 2vw;
+}
+
+#main{
+  width: 100%;
+  height: 100%vh;
+  background-color: black;
+  
+  
+  
+}
+
+#main-one{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#product{
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  
+  
+  
+}
+
+#product h1{
+  
+  font-size: 10vw;
+  text-transform: uppercase;
+  opacity: 0.5;
+  line-height: 1;
+}
+
+#Designer{
+  margin-left: 10vw;
+}
+
+#prduct-one{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: fit-content;
+}
+
+
+#prduct-one h5{
+  text-transform: uppercase;
+  font-size: 1vw;
+}
+
+
+#second-item{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 10vw;
+  margin-right: 5vw;
+  
+
+}
+
+
+#second-item h5{
+  text-transform: uppercase;
+  margin-bottom: 0.5vw;
+}
+
+#hero-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 35vw;
+  margin-top: 10vw;
+  margin-bottom: 15vw;
+  margin-left: 5vw;
+
+}
+
+#hero-footer a{
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+}
