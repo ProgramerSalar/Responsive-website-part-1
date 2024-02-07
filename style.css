@@ -10,6 +10,17 @@ body {
   height: 100%;
 }
 
+
+#mini-circle {
+
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
 #navbar {
   display: flex;
   flex-direction: row;
@@ -24,6 +35,9 @@ body {
 #navbar h5 {
   font-size: 2vh;
 }
+
+
+
 
 #main {
   width: 100%;
