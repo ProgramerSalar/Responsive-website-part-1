@@ -1,18 +1,16 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
-html,body{
+html,
+body {
   width: 100%;
   height: 100%;
 }
 
-
-
-#navbar{
+#navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,95 +19,276 @@ html,body{
   top: 0;
   background-color: black;
   width: 100%;
-  
-
 }
 
-
-#navbar h5{
-  font-size: 2vw;
+#navbar h5 {
+  font-size: 2vh;
 }
 
-#main{
+#main {
   width: 100%;
-  height: 100%vh;
-  background-color: black;
-  
-  
-  
-}
-
-#main-one{
-  width: 100%;
-  height: 100%;
   background-color: black;
 }
 
-#product{
+#main-one {
+  width: 100%;
+  /* height: 100%; */
+  background-color: black;
+}
+
+#product {
   margin-top: 10vw;
   display: flex;
   flex-direction: column;
   margin-left: 2vw;
-  
-  
-  
 }
 
-#product h1{
-  
+#product h1 {
   font-size: 10vw;
   text-transform: uppercase;
   opacity: 0.5;
   line-height: 1;
 }
 
-#Designer{
+#Designer {
   margin-left: 10vw;
 }
 
-#prduct-one{
+#prduct-one {
   display: flex;
   flex-direction: column;
   align-items: end;
   width: fit-content;
 }
 
-
-#prduct-one h5{
+#prduct-one h5 {
   text-transform: uppercase;
-  font-size: 1vw;
+  font-size: 1vh;
 }
 
-
-#second-item{
+#second-item {
   display: flex;
   flex-direction: column;
   align-items: end;
   margin-top: 10vw;
   margin-right: 5vw;
-  
-
 }
 
-
-#second-item h5{
+#second-item h5 {
   text-transform: uppercase;
   margin-bottom: 0.5vw;
+  font-size: 1vh;
 }
 
-#hero-footer{
+#hero-footer {
   display: flex;
   flex-direction: row;
-  gap: 35vw;
-  margin-top: 10vw;
-  margin-bottom: 15vw;
-  margin-left: 5vw;
+  justify-content: space-around;
+  margin-top: 15vh;
+}
+
+#hero-footer a {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1vw;
+}
+
+.ri-arrow-right-line {
+  display: flex;
+  transition-duration: 1s;
+}
+
+.ri-arrow-right-line:hover {
+  transform: rotate(90deg);
+}
+
+#iconset {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  font-size: 2vh;
+}
+
+#cirle {
+  display: flex;
+  background-color: rgb(199, 91, 91);
+  /* border-radius: 50%; */
+  border: solid 1px white;
+}
+
+.ri-arrow-up-line {
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.ri-arrow-up-line:hover {
+  transform: translateY(10px);
+}
+
+.ri-arrow-down-line {
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.ri-arrow-down-line:hover {
+  transform: translateY(-10px);
+}
+
+#second {
+  background-color: black;
+  padding-top: 200px;
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.elem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 3px white;
+  border-top: solid 1px rgb(153, 64, 64);
+  line-height: 14vh;
+  margin-right: 5vw;
+}
+
+.elem h1 {
+  text-transform: uppercase;
+  font-size: 5vw;
+  opacity: 0.9;
+  margin-left: 2vh;
+}
+
+.the-plug {
+  display: flex;
+}
+
+.elem h5 {
+  font-size: 1.5vh;
+}
+
+#about {
+  display: flex;
+  margin-top: 8vw;
+}
+
+#about img {
+  width: 13vw;
+  height: 12vw;
+  margin-left: 2vw;
 
 }
 
-#hero-footer a{
-  text-decoration: none;
+#textabout {
+  display: flex;
+  flex-direction: column;
+}
+
+#textabout h5 {
+  font-size: 2vh;
   text-transform: uppercase;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+}
+
+#textabout p {
+  font-size: 2vh;
+  margin-left: 2vw;
+  margin-right: 4vw;
+  line-height: 1.5;
+}
+
+
+
+#talk{
+  display: flex;
+  width: fit-content;
+  margin-left: 5vw;
+  margin-top: 2vw;
+  text-decoration: none;
+  font-size: 1.5vh;
+  color: white;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 1vw;
+  
+}
+
+
+#subscribe{
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3vh;
+  gap: 0.5vw;
+  line-height: 1;
+  margin-left: 2vw;
+  
+}
+
+
+#subscribe h5{
+  display: flex;
+  width: fit-content;
+  opacity: 0.8;
+  text-transform: uppercase;
+
+}
+
+
+#subscribe h3{
+  display: flex;
+  text-transform: uppercase;
+
+}
+
+.ri-arrow-right-up-line{
+  display: flex;
+  flex-direction: row;
+  transition-duration: 1s;
   cursor: pointer;
+  margin-left: 1vw;
+
+
+}
+
+.ri-arrow-right-up-line:hover{
+  transform: rotate(45deg);
+
+}
+
+
+#footer{
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1vw;
+  text-transform: uppercase;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding: 40px 30px;
+  
+}
+
+
+
+#footerleft{
+  display: flex;
+  gap: 3vw;
+
+}
+
+#footerright{
+  display: flex;
+  gap: 3vw;
+}
+
+
+#footerright a{
+  text-decoration: none;
   color: white;
 }
