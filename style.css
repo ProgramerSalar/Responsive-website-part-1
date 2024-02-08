@@ -12,7 +12,7 @@ body {
 
 
 #mini-circle {
-
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -20,6 +20,19 @@ body {
   border-radius: 50%;
   background-color: #fff;
 }
+
+/* bounding element  */
+#bounding {
+  width: fit-content;
+  overflow: hidden;
+  /* background-color: white; */
+}
+
+.boundingelem {
+  transform: translateY(100%);
+}
+
+
 
 #navbar {
   display: flex;
