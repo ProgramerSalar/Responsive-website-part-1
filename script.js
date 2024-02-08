@@ -21,8 +21,7 @@ function firstPageAnim() {
     opacity: 0,
     duration: 1.5,
     ease: Expo.easeInOut,
-  })
-  .to(".boundingelem", {
+  }).to(".boundingelem", {
     y: 0,
     ease: Expo.easeInOut,
     duration: 2,
@@ -48,9 +47,27 @@ function circleChaptiKaro() {
     xprev = dets.clientX;
     yprev = dets.clientY;
 
-    circleMouseFollower(xscale, yscale)
+    circleMouseFollower(xscale, yscale);
   });
 }
 
+circleChaptiKaro();
 
-circleChaptiKaro()
+// teeno element ko sleect karo, uske baad teeno par ek mousemove lagao,
+//  jab mousemove ho to ye pata karo ki mouse kaha par hai, jiska matlab hai mouse ki x and y position pata karo, ab mouse ki x y position ke badle us image ko show karo and us image ko move karo,
+//   move karte waqt rotate karo, and jaise jaise mouse tez chale waise waise rotation bhi tez ho jaye
+
+
+
+
+document.querySelectorAll(".elem").forEach(function (elem){
+
+  elem.addEventListener("mouseleave", function(details){
+    // console.log(details.clientX, details.clientY)
+    gsap.to(elem.querySelector("img"), {
+      opacity: 1,
+      ease: Power3,
+      duration: 0.5,
+    });
+  })
+})
